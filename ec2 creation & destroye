@@ -10,4 +10,9 @@ cmd -- aws ec2 run-instances --image-id ami-0cf10cdf9fcd62d37 --count 1 --instan
 cmd --- aws ec2 terminate-instances --instance-id i-0353732eeb6b38c94
 # get the list Users 
 cmd --  aws iam list-users
+# ec2 start 
+aws ec2 start-instances < instance id>
+# ec2 create keypair
+aws ec2 create-key-pair <sample keypair>
+copy file 
 
