@@ -1,6 +1,13 @@
+What is the Aws CLI ?
+  aws cli is command line tool it is used to operate smaill tasks. like get users list, s3 buket list etc. 
+
+
 1. Need to configure creds powershell or cmd
-aws configure # using this command 
-# ec2 creation
-aws ec2 run-instances --image-id ami-0cf10cdf9fcd62d37 --count 1 --instance-type t2.micro --key-name us-east-keypair --subnet-id subnet-0534eac854c0e6cce --security-group-ids sg-04107b504d7bbc802
-#ec2 terminate
-aws ec2 terminate-instances --instance-id i-0353732eeb6b38c94
+cmd -- aws configure # using this command 
+# ec2 creation form cli
+cmd -- aws ec2 run-instances --image-id ami-0cf10cdf9fcd62d37 --count 1 --instance-type t2.micro --key-name us-east-keypair --subnet-id subnet-0534eac854c0e6cce --security-group-ids sg-04107b504d7bbc802
+#ec2 terminate 
+cmd --- aws ec2 terminate-instances --instance-id i-0353732eeb6b38c94
+# get the list Users 
+cmd --  aws iam list-users
+
